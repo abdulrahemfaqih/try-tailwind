@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
    <meta charset="UTF-8" />
@@ -36,7 +36,6 @@
       #toogle:checked ~ label div.toogle-circle {
          @apply translate-x-5
       } 
-
       </style>
 </head>
 
@@ -52,32 +51,123 @@
       </label>
       <span class="text-sm font-medium dark:text-slate-200">Dark</span>
    </div>
+   <!-- title -->
+   <div class="flex items-center justify-center max-w-lg pt-10 mx-auto title">
+      <h1 class="text-2xl font-bold tracking-wider">Belajar Tailwind</h1>
+   </div>
    <!-- card -->
-   <div class="m-4 max-w-lg  border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-blue-500 ease-in duration-300   group">
-      <div class="h-[200px] bg-cover bg-center mb-4 rounded-md" style="background-image: url(img/photo.jpg);"></div>
-      <h5 class="font-bold py-2 text-lg">Singa</h5>
-      <p class="text-justify selection:bg-red-600">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut cum molestias
-         iste culpa, magni deserunt voluptatum eligendi, ratione qui commodi, ad natus architecto quam!
-      </p>
-      <button class="mt-2 bg-slate-600 px-3 py-2 rounded-lg text-slate-100 text-sm ease-in duration-300 group-hover:bg-blue-200 group-hover:text-black">Detail</button>
+   <div class="p-5">
+      <div
+         class="max-w-lg p-5 m-4 mx-auto duration-300 ease-in border shadow-md border-slate-200 rounded-xl hover:bg-blue-500 group">
+         <div class="h-[200px] bg-cover bg-center mb-4 rounded-md" style="background-image: url(img/photo.jpg);"></div>
+         <h5 class="py-2 text-lg font-bold">Singa</h5>
+         <p class="text-justify selection:bg-red-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut cum molestias
+            iste culpa, magni deserunt voluptatum eligendi, ratione qui commodi, ad natus architecto quam!
+         </p>
+         <button
+            class="px-3 py-2 mt-2 text-sm duration-300 ease-in rounded-lg bg-slate-600 text-slate-100 group-hover:bg-blue-200 group-hover:text-black">Detail</button>
+      </div>
    </div>
    <!-- form input -->
-   <div class="m-4 max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md group hover:bg-slate-500 ease-in duration-300">
-      <h3 class="text-center mb-5 font-bold text-xl">Form Login</h3>
-      <form action=""">
-         <label for="email" class="block">
-            <span class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Email</span>
-            <input class="px-3 py-3 border shadow rounded-md w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700 peer"  type="email" placeholder="masukkan email">
+   <div class="p-5">
+      <div
+         class="max-w-lg p-5 m-4 mx-auto my-10 duration-300 ease-in border shadow-md border-slate-200 rounded-xl group hover:bg-slate-500">
+         <h3 class="mb-5 text-xl font-bold text-center">Form Login</h3>
+         <form action=""">
+         <label for=" email" class="block">
+            <span
+               class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Email</span>
+            <input
+               class="block w-full px-3 py-3 text-sm border rounded-md shadow text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700 peer"
+               type="email" placeholder="masukkan email">
             <p class="text-[14px] hidden text-red-600 py-2 pl-0.5  peer-invalid:block">Email tidak valid</p>
-         </label>
-         <label for="password" class="block mt-3">
-            <span class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Password</span>
-            <input class="px-3 py-3 border shadow rounded-md w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700"  type="password" placeholder="masukkan password">
-         </label>
-      </form>
+            </label>
+            <label for="password" class="block mt-3">
+               <span
+                  class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Password</span>
+               <input
+                  class="block w-full px-3 py-3 text-sm border rounded-md shadow text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700"
+                  type="password" placeholder="masukkan password">
+            </label>
+            <div class="flex items-center justify-center mt-4 ">
+               <button
+                  class="p-2 text-sm font-medium bg-blue-500 border rounded-md text-slate-700 group-hover:bg-white">Login</button>
+            </div>
+         </form>
+      </div>
    </div>
-   <div class="border shadow-2xl h-10 w-60 mx-auto flex justify-center items-center rounded-lg text-slate-900 font-semimedium">
+
+   <hr class="my-20 border-black">
+   <!-- animasi -->
+   <div
+      class="w-40 h-40 bg-blue-600 rounded-md mx-auto shadow-lg hover:scale-125 hover:rotate-45 hover:translate-x-20 hover:bg-red-500 transition origin-top-left ">
+   </div>
+   <div class="w-40 h-40 mx-auto mt-10 group ">
+      <div class="w-full h-full rounded-lg bg-blue-600 group-hover:rotate-180 origin-top-left transition"></div>
+   </div>
+   <div class="w-40 h-40 bg-blue-600 rounded-md mx-auto shadow-lg mt-10 animate-spin "></div>
+
+   <hr class="my-20 border-black">
+
+   <div class="container p-5 mx-auto">
+      <div class="border rounded-lg p-5 shadow-lg relative">
+         <div class=" w-10 h-10 bg-pink-200 rounded-full flex absolute -top-3 -right-3 cursor-pointer"><span
+               class="x m-auto">❌</span></div>
+         <div class=" w-10 h-10 bg-slate-300 rounded-full flex fixed bottom-5 right-5 cursor-pointer"><a href="#"
+               class="x m-auto">⬆️</a></div>
+         <img class="w-40 rounded-lg float-left mr-2 " src="img/photo.jpg">
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusamus ullam, minima mollitia commodi
+            fuga fugit et, assumenda impedit velit ea aut. Odio voluptatum voluptas officiis? Vero voluptates,
+            consequuntur animi voluptatibus similique ipsam possimus suscipit delectus enim ad? Adipisci facere, totam
+            odit fuga dolorem suscipit corrupti quis? Tenetur, quae nemo. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Consequuntur dolor dolore necessitatibus commodi, eius sint cum fugit minus earum illum
+            perspiciatis libero accusamus delectus exercitationem alias adipisci quo voluptate enim quia modi non!
+            Tenetur doloremque quisquam qui totam aperiam quae, debitis ipsa voluptates ullam? Numquam, ipsum! Qui
+            deleniti ipsa vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis reprehenderit
+            asperiores omnis libero neque sapiente odio nesciunt possimus, corrupti esse totam corporis labore animi
+            necessitatibus harum debitis nisi vel sunt dolorem dicta suscipit? Necessitatibus quod ullam deserunt.
+            Perspiciatis ipsa officiis provident hic, corrupti quo labore eos repudiandae aliquid illo dolore nisi
+            dolorum voluptas. Quisquam repellat, iste ex saepe deleniti ab voluptatum. Atque voluptates sapiente aut
+            quam aspernatur. Illo unde dignissimos quae necessitatibus velit ad debitis mollitia iusto aperiam, nobis
+            iure, quaerat soluta quis impedit laborum laboriosam ipsum nisi modi atque libero. Eius unde saepe,
+            doloremque minima dolorum sit aperiam doloribus autem sunt ad officiis? Hic fugit labore reiciendis quis
+            necessitatibus nostrum nesciunt qui possimus dolores dolorem, tempora consectetur nam pariatur culpa
+            corporis facilis error. Eius, aut provident et, modi repudiandae, laborum praesentium suscipit blanditiis
+            hic perspiciatis alias quae ullam ratione. Magnam temporibus ex quaerat praesentium iusto a hic sit, iste
+            rerum esse non, amet doloremque tempora distinctio maiores. Autem ipsum aperiam consequuntur tempora
+            pariatur recusandae ullam architecto praesentium aut commodi! Praesentium earum temporibus quis vel aperiam
+            a omnis dolores cupiditate aspernatur, saepe quas dolor mollitia unde! Repellat tempore sed quam natus,
+            voluptate id nihil non rem porro odit delectus!
+         </p>
+      </div>
+   </div>
+   <div class="container p-5 mx-auto">
+      <div class="border rounded-lg p-5 shadow-lg columns-3">
+         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div
+      class="flex items-center justify-center h-10 mx-auto border rounded-lg shadow-2xl w-60 text-slate-900 font-semimedium mt-3 animate-bounce">
       <p class="dark:text-slate-200">&copy; 2023 Abdul Rahem Faqih</p>
    </div>
    <div class="mb-4"></div>
@@ -85,9 +175,23 @@
       const checkbox = document.getElementById("toogle");
       const html = document.querySelector("html")
 
-      checkbox.addEventListener("click", function() {
+      checkbox.addEventListener("click", function () {
          checkbox.checked ? html.classList.add("dark") : html.classList.remove("dark");
       })
+
+      const x = document.querySelector(".x");
+      const content = document.querySelector(".container");
+
+      x.addEventListener("click", () => {
+         x.style.display = "none";
+         content.style.display = "none";
+
+
+         setTimeout(() => {
+            x.style.display = "block";
+            content.style.display = "block";
+         }, 2000);
+      });
 
    </script>
 </body>
