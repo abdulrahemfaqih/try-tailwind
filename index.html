@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+   <title>Belajar TailwindCSS</title>
+   <script>
+      tailwind.config = {
+         darkMode: "class",
+         theme: {
+            extend: {
+
+               colors: {
+                  clifford: "#da373d",
+               },
+               fontFamily: {
+                  jakarta: ["Plus Jakarta Sans"],
+                  poppins: ["Poppins"],
+               },
+               spacing: {
+                  13: "3.25rem",
+               },
+            },
+         },
+      };
+   </script>
+   <style type="text/tailwindcss">
+      /* * {
+            border: 1px solid rgb(110, 110, 110);
+         } */
+      #toogle:checked ~ label div.toogle-circle {
+         @apply translate-x-5
+      } 
+
+      </style>
+</head>
+
+<body class="font-poppins dark:bg-slate-800 dark:text-slate-200">
+   <!-- toggle darkmode -->
+   <div class="flex justify-center items-center p-3 m-3 rounded-lg border shadow-lg w-[140px] mx-auto gap-2 ">
+      <span class="text-sm font-medium dark:text-slate-200 ">Light</span>
+      <input class="hidden" type="checkbox" id="toogle">
+      <label for="toogle">
+         <div class="w-[40px] h-5 bg-slate-300 rounded-full dark:bg-slate-700 flex items-center px-0.5 cursor-pointer">
+            <div class="w-4 h-4 bg-white rounded-full toogle-circle"></div>
+         </div>
+      </label>
+      <span class="text-sm font-medium dark:text-slate-200">Dark</span>
+   </div>
+   <!-- card -->
+   <div class="m-4 max-w-lg  border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-blue-500 ease-in duration-300 md:max-w-2xl md:m-28  group">
+      <div class="h-[200px] bg-cover bg-center mb-4 rounded-md" style="background-image: url(img/photo.jpg);"></div>
+      <h5 class="font-bold py-2 text-lg">Singa</h5>
+      <p class="text-justify selection:bg-red-600">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut cum molestias
+         iste culpa, magni deserunt voluptatum eligendi, ratione qui commodi, ad natus architecto quam!
+      </p>
+      <button class="mt-2 bg-slate-600 px-3 py-2 rounded-lg text-slate-100 text-sm ease-in duration-300 group-hover:bg-blue-200 group-hover:text-black">Detail</button>
+   </div>
+   <!-- form input -->
+   <div class="m-4 max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md group hover:bg-slate-500 ease-in duration-300">
+      <h3 class="text-center mb-5 font-bold text-xl">Form Login</h3>
+      <form action=""">
+         <label for="email" class="block">
+            <span class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Email</span>
+            <input class="px-3 py-3 border shadow rounded-md w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700 peer"  type="email" placeholder="masukkan email">
+            <p class="text-[14px] hidden text-red-600 py-2 pl-0.5  peer-invalid:block">Email tidak valid</p>
+         </label>
+         <label for="password" class="block mt-3">
+            <span class="font-semibold block mb-2 text-slate-700 after:content-['*'] after:text-red-600 after:ml-0.5 dark:text-slate-300 group-hover:text-slate-800">Password</span>
+            <input class="px-3 py-3 border shadow rounded-md w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 invalid:focus:ring-red-700"  type="password" placeholder="masukkan password">
+         </label>
+      </form>
+   </div>
+   <div class="border shadow-2xl h-10 w-60 mx-auto flex justify-center items-center rounded-lg text-slate-900 font-semimedium">
+      <p class="dark:text-slate-200">&copy; 2023 Abdul Rahem Faqih</p>
+   </div>
+   <div class="mb-4"></div>
+   <script>
+      const checkbox = document.getElementById("toogle");
+      const html = document.querySelector("html")
+
+      checkbox.addEventListener("click", function() {
+         checkbox.checked ? html.classList.add("dark") : html.classList.remove("dark");
+      })
+
+   </script>
+</body>
+
+</html>
