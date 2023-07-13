@@ -4,42 +4,35 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
    <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="dist/output.css">
    <title>Belajar TailwindCSS</title>
    <script>
-      tailwind.config = {
-         darkMode: "class",
-         theme: {
-            extend: {
-               screen: {
-                  "xs" : "475px"
-               },
-               colors: {
-                  clifford: "#da373d",
-               },
-               fontFamily: {
-                  jakarta: ["Plus Jakarta Sans"],
-                  poppins: ["Poppins"],
-               },
-               spacing: {
-                  13: "3.25rem",
-               },
-            },
-         },
-      };
+      // tailwind.config = {
+      //    darkMode: "class",
+      //    theme: {
+      //       extend: {
+      //          screen: {
+      //             "xs" : "475px"
+      //          },
+      //          colors: {
+      //             clifford: "#da373d",
+      //          },
+      //          fontFamily: {
+      //             jakarta: ["Plus Jakarta Sans"],
+      //             poppins: ["Poppins"],
+      //          },
+      //          spacing: {
+      //             13: "3.25rem",
+      //          },
+      //       },
+      //    },
+      // };
    </script>
-   <style type="text/tailwindcss">
-      /* * {
-            border: 1px solid rgb(110, 110, 110);
-         } */
-      #toogle:checked ~ label div.toogle-circle {
-         @apply translate-x-5
-      } 
-      </style>
 </head>
 
 <body class="font-poppins dark:bg-slate-800 dark:text-slate-200">
@@ -240,34 +233,34 @@
       <h2 class="h-15 text-xl font-semibold text-slate-800 md:col-start-4 p-1 md:row-start-2 md:flex "><span class="self-center rounded-md">Abdul Rahem Faqih</span></h2>
       <div class="h-15 text-lg font-bold text-slate-600 p-1 md:col-start-2 md:row-start-2 md:flex"><span class="self-end rounded-md shadow-xl border p-1 px-2">@rahemfqh</span></div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-         <div class="w-full h-full bg-[url('img/grid/1.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+         <div class="w-full h-full bg-[url('/img/grid/1.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
-          <div class="w-full h-full bg-[url('img/grid/2.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/2.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-          <div class="w-full h-full bg-[url('img/grid/3.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/3.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-          <div class="w-full h-full bg-[url('img/grid/4.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/4.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div> 
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-          <div class="w-full h-full bg-[url('img/grid/5.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/5.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-2">
-          <div class="w-full h-full bg-[url('img/grid/6.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/6.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-4">
-          <div class="w-full h-full bg-[url('img/grid/7.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/7.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-          <div class="w-full h-full bg-[url('img/grid/8.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/8.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
-          <div class="w-full h-full bg-[url('img/grid/9.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/9.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
       <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
-          <div class="w-full h-full bg-[url('img/grid/10.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+          <div class="w-full h-full bg-[url('/img/grid/10.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
       </div>
    </div>
 
@@ -278,6 +271,18 @@
    </div>
    <div class="mb-4"></div>
    <script>
+
+      const toggle = document.getElementById("toogle");
+      const toogleCircle = document.querySelector(".toogle-circle");
+
+      toggle.addEventListener("change", function() {
+      if (toggle.checked) {
+         toogleCircle.classList.add("translate-x-5");
+      } else {
+         toogleCircle.classList.remove("translate-x-5");
+      }
+      });
+
       const checkbox = document.getElementById("toogle");
       const html = document.querySelector("html")
 
@@ -298,7 +303,6 @@
             content.style.display = "block";
          }, 2000);
       });
-
    </script>
 </body>
 
