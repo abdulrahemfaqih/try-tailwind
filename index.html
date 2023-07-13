@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
 
 <head>
    <meta charset="UTF-8" />
@@ -15,7 +15,9 @@
          darkMode: "class",
          theme: {
             extend: {
-
+               screen: {
+                  "xs" : "475px"
+               },
                colors: {
                   clifford: "#da373d",
                },
@@ -121,6 +123,8 @@
                class="x m-auto">❌</span></div>
          <div class=" w-10 h-10 bg-slate-300 rounded-full flex fixed bottom-5 right-5 cursor-pointer"><a href="#"
                class="x m-auto">⬆️</a></div>
+         <div class=" w-10 h-10 bg-slate-300 rounded-full flex fixed top-5 right-5 cursor-pointer"><a href="#footer"
+               class="x m-auto">⬇️</a></div>
          <img class="w-40 rounded-lg float-left mr-2 " src="img/photo.jpg">
          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis accusamus ullam, minima mollitia commodi
@@ -150,12 +154,12 @@
    </div>
    <div class="container p-5 mx-auto">
       <div class="border rounded-lg p-5 shadow-lg columns-3">
-         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
-         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
-         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
-         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
-         <img class="mb-4 rounded-lg" src="https://source.unsplash.com/600x400">
-         <img class="rounded-lg" src="https://source.unsplash.com/600x400">
+         <img class="mb-4 rounded-lg" src="img/grid/1.jpeg">
+         <img class="rounded-lg" src="img/grid/2.jpeg">
+         <img class="mb-4 rounded-lg" src="img/grid/4.jpeg">
+         <img class="rounded-lg" src="img/grid/5.jpeg">
+         <img class="mb-4 rounded-lg" src="img/grid/7.jpeg">
+         <img class="rounded-lg" src="img/grid/8.jpeg">
       </div>
    </div>
 
@@ -166,7 +170,7 @@
          <h3 class="text-3xl font-bold text-slate-800 dark:text-slate-100">Abdul Rahem <span
                class="text-sky-600">Faqih</span></h3>
          <img class="border-1 rounded-2xl shadow-xl mt-3 sm:mt-6 sm:h-64 sm:w-full sm:object-center lg:hidden"
-            src="https://source.unsplash.com/1280x600?coding" alt="">
+            src="img/grid/2.jpeg"" alt="">
          <h2 class="mt-5 text-[24px] font-semibold text-slate-800 dark:text-slate-100 sm:text-2xl">Mari belajar tailwind
             bersama saya</h2>
          <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione eaque animi doloremque,
@@ -177,7 +181,7 @@
          </div>
       </div>
       <div class="hidden lg:block lg:shadow-lg lg:border lg:object-cover" >
-         <img src="https://source.unsplash.com/1280x605?coding" alt="">
+         <img src="img/grid/3.jpeg"" alt="">
       </div>
    </div>
 
@@ -187,63 +191,89 @@
 
    <div class="p-5 mx-auto container sm:flex sm:flex-wrap justify-evenly sm:gap-10 md:gap-10">
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/4.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/6.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/2.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/9.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/10.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-         <img class="w-full" src="https://source.unsplash.com/600x400?coding">
+         <img class="w-full" src="img/grid/2.jpeg">
          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-slate-900">Image Title</div>
+            <div class="font-bold text-xl mb-2 text-slate-900 dark:text-slate-200">Image Title</div>
             <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, impedit.</p>
          </div>
       </div>
    </div>
+   <div class="flex justify-center items-center mt-10">
+      <h2 class="text-2xl font-bold shadow-lg border text-center w-64 rounded-lg ">Latihan Grid</h2>
+   </div>
+   <div class="mt-3 p-2 grid grid-cols-2 gap-3 md:grid-cols-4 md:p-4">
+      <h2 class="h-15 text-xl font-semibold text-slate-800 md:col-start-4 p-1 md:row-start-2 md:flex "><span class="self-center rounded-md">Abdul Rahem Faqih</span></h2>
+      <div class="h-15 text-lg font-bold text-slate-600 p-1 md:col-start-2 md:row-start-2 md:flex"><span class="self-end rounded-md shadow-xl border p-1 px-2">@rahemfqh</span></div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+         <div class="w-full h-full bg-[url('img/grid/1.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
+          <div class="w-full h-full bg-[url('img/grid/2.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+          <div class="w-full h-full bg-[url('img/grid/3.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+          <div class="w-full h-full bg-[url('img/grid/4.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div> 
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+          <div class="w-full h-full bg-[url('img/grid/5.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-2">
+          <div class="w-full h-full bg-[url('img/grid/6.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-4">
+          <div class="w-full h-full bg-[url('img/grid/7.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+          <div class="w-full h-full bg-[url('img/grid/8.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
+          <div class="w-full h-full bg-[url('img/grid/9.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 md:col-start-3">
+          <div class="w-full h-full bg-[url('img/grid/10.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 "></div>
+      </div>
+   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+   <!-- footer -->
    <div
-      class="flex items-center justify-center h-10 mx-auto border rounded-lg shadow-2xl w-60 text-slate-900 font-semimedium mt-3 animate-bounce">
+      class="flex items-center justify-center h-10 mx-auto border rounded-lg shadow-2xl w-60 text-slate-900 font-semimedium mt-3 animate-bounce " id="footer">
       <p class="dark:text-slate-200">&copy; 2023 Abdul Rahem Faqih</p>
    </div>
    <div class="mb-4"></div>
